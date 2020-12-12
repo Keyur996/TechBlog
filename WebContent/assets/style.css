@@ -1,0 +1,5 @@
+#banner{
+   clip-path: polygon(0% 0%, 100% 0%, 100% 93%, 74% 85%, 55% 94%, 21% 86%, 0 96%);
+   background-color: #3f51b5;
+   height: 80vh;		
+}
