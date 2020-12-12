@@ -1,3 +1,6 @@
+<%@page import="java.io.PrintWriter"%>
+<%@page import="com.tech.blog.helper.Database"%>
+<%@page import="java.sql.Connection"%>
 <!-- Header -->
 <%@include file="includes/header.jsp" %>
 <!-- Header -->
@@ -10,11 +13,12 @@
 				<h1 class="display-4">Welcome to TechBlog</h1>
 				<p class="lead">Here, We can see many Blogs on Programming Languages and New Projects</p>
 				<hr class="my-4">
-				<p>  
+				<p> 
 				 A programming language is a formal language comprising a set of instructions that produce various kinds of output.
 				 Programming languages are used in computer programming to implement algorithms.
 				 Most programming languages consist of instructions for computers.
 				</p>
+
 				<br>
 				<a href="register.jsp" class="btn btn-outline-primary text-white" ><i class="fa fa-user-plus" aria-hidden="true"></i> Start Journey</a>
 				<a href="login.jsp" class="btn btn-outline-primary text-white" ><i class="fa fa-user-circle-o fa-spin" aria-hidden="true"></i> LogIn</a>

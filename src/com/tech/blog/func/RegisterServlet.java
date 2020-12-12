@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 
 
 @SuppressWarnings("serial")
-public class FirstServlet  extends HttpServlet {
+public class RegisterServlet  extends HttpServlet {
 
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
