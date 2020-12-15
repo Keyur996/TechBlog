@@ -25,15 +25,13 @@ public class Users {
 		this.created = created;
 	}
 
-	public Users(String user_name, String user_pass, String user_email, String user_gender, String user_about,
-			String created) {
+	public Users(String user_name, String user_pass, String user_email, String user_gender, String user_about) {
 		super();
 		this.user_name = user_name;
 		this.user_pass = user_pass;
 		this.user_email = user_email;
 		this.user_gender = user_gender;
 		this.user_about = user_about;
-		this.created = created;
 	}
 
 	@Override

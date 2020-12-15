@@ -1,5 +1,28 @@
+:root{
+   --err-color:#ef5350;
+   --success-color:#00e676
+}
+
 #banner{
    clip-path: polygon(0% 0%, 100% 0%, 100% 93%, 74% 85%, 55% 94%, 21% 86%, 0 96%);
    background-color: #3f51b5;
    height: 80vh;		
+}
+
+.alert{
+   display: none;
+}
+
+.form-group.error input{
+   border: 1px solid;
+   border-color: var(--err-color);
+}
+
+.form-group.success input{
+   border: 1px solid;
+   border-color: var(--success-color);
+}
+
+.form-group.error small{
+   color: var(--err-color);
 }
