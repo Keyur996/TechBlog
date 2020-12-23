@@ -14,14 +14,17 @@
 				<div class="card justify-content-center" style="width:auto;">
 					<form action="register" method="POST" class="form" id="form1">
 						<div class="card-header text-white text-center" style="background-color: #2196f3;">	
-							<i class="fa fa-user-plus fa-3x" aria-hidden="true"></i><br/>	
-							<h4>Registration</h4>
+							<i class="fa fa-user-plus fa-2x" aria-hidden="true"></i><br/>	
+							<h5>Registration</h5>
+							<div class="input-group form-group mt-2">
+	                        <div class="input-group-prepend">
+	                           <span class="input-group-text"><i class="fa fa-envelope"></i></span>
+	                       	</div>
+	                        	<input type="text" name="user_msg" class="form-control" style="color: red;" readonly
+	                        		value='<%= (request.getAttribute("message")==null) ? "Welcome...." : request.getAttribute("message") %>'>
+				      	   	</div>
 						</div>
 						<div class="card-body">
-							<div class="alert alert-warning alert-dismissible" role="alert">
-								<%= (request.getAttribute("errMessage")==null) ? "" : request.getAttribute("errMessage") %>
-								<button type="button" class="close" data-dismiss="alert" aria-label="Close"></button>
-							</div>
 							<div class="form-group mb-2">
 								<label for="username">Username:</label>
 								<input type="text" name="user_name" class="form-control" id="username">

@@ -12,20 +12,18 @@
          <div class="col-md-4 offset-md-4">
             <div class="card">
                <div class="card-header text-center text-white" style="background-color: #2196f3;">
-                  <i class="fa fa-users fa-3x" aria-hidden="true"></i>
+                  <i class="fa fa-users fa-2x" aria-hidden="true"></i>
                   <h4>LogIn</h4>
+                  <div class="input-group form-group mt-1">
+                        <div class="input-group-prepend">
+                           <span class="input-group-text"><i class="fa fa-envelope"></i></span>
+                        </div>
+                        <input type="text" name="user_msg" class="form-control" style="color: red;" readonly 
+                        value='<%= (request.getAttribute("message")==null) ? "Welcome...." : request.getAttribute("message") %>'>
+			      	</div>
                </div>
                <div class="card-body">
                   <form action="#" method="post" class="form" id="form2">
-<!--                      <div class="alert alert-success alert-dimissible" role="alert"> -->
-					 <div>	
-					      <%= (request.getAttribute("success")==null) ? "" : request.getAttribute("success") %>
-<!-- 					      <button type="button" class="close" data-dismiss="alert" aria-label="Close"></button> -->
-					 </div>
-                     <div class="alert alert-warning alert-dimissible" role="alert">
-					      <%= (request.getAttribute("errMessage")==null) ? "" : request.getAttribute("errMessage") %>
-					      <button type="button" class="close" data-dismiss="alert" aria-label="Close"></button>
-			      	 </div>
                      <div class="input-group form-group">
                         <div class="input-group-prepend">
                            <span class="input-group-text"><i class="fa fa-user-circle" aria-hidden="true"></i></span>

@@ -26,17 +26,21 @@ public class RegisterServlet  extends HttpServlet {
 		String gender=req.getParameter("user_gender");
 		String about=req.getParameter("user_about");
 		//Collected data mapped with vo
-		Users user= new Users(username, pass, email, gender, about);
-		// Connect to database
-		UsersDao dao = new UsersDao(Database.connect());
-		// Create Into database
-		int result=dao.create(user);
-		if(result != 0) {
-			req.setAttribute("success", "Registration Successful..");
-			req.getRequestDispatcher("login.jsp").forward(req, resp);
-		} else {
-			req.setAttribute("errMessage", "Something Went Wrong...");
-			req.getRequestDispatcher("register.jsp").forward(req, resp);
+		try {
+			Users user= new Users(username, pass, email, gender, about);
+			// Connect to database
+			UsersDao dao = new UsersDao(Database.connect());
+			// Create Into database
+			int result=dao.create(user);
+			if(result != 0) {
+				req.setAttribute("message", "Registration Successful..");
+				req.getRequestDispatcher("login.jsp").forward(req, resp);
+			} else {
+				req.setAttribute("message", "Something Went Wrong...");
+				req.getRequestDispatcher("register.jsp").forward(req, resp);
+			}
+		}catch(Exception e) {
+			e.printStackTrace();
 		}
 	}
 	
