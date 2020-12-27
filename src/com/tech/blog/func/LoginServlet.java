@@ -35,8 +35,9 @@ public class LoginServlet extends HttpServlet {
 			if(userData != null) {
 				HttpSession session = req.getSession();
 				session.setAttribute("currentUser", userData);
-				req.setAttribute("message", "Login Successful..");
-				req.getRequestDispatcher("login.jsp").forward(req, resp);
+//				req.setAttribute("message", "Login Successful..");
+//				req.getRequestDispatcher("login.jsp").forward(req, resp);
+				resp.sendRedirect("index.jsp");
 				conn.commit();
 			} else {
 				req.setAttribute("message", "Something Went Wrong..");

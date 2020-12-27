@@ -1,6 +1,13 @@
+<%@page import="com.tech.blog.vo.Users"%>
 <%@page import="java.io.PrintWriter"%>
 <%@page import="com.tech.blog.helper.Database"%>
 <%@page import="java.sql.Connection"%>
+<%
+	Users user = (Users)session.getAttribute("currentUser");
+	if(user == null){
+		response.sendRedirect("login.jsp");
+	}
+%>
 <!-- Header -->
 <%@include file="includes/header.jsp" %>
 <!-- Header -->
