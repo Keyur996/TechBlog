@@ -27,6 +27,7 @@
 	</div>
 	
 	<br>
+	<hr/>
 	
 	<div class="container">
 		<div class="row mb-2">
@@ -95,10 +96,6 @@
 		</div>
 
 	</div>
-	
-	<br>
-	
-	<hr>
 <!-- Footer -->
 <%@include file="includes/footer.jsp" %>
 <!-- Footer -->

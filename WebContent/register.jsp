@@ -10,8 +10,8 @@
    background-color: #3f51b5;padding-bottom:100px;">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-4 offset-md-4">
-				<div class="card justify-content-center" style="width:auto;">
+			<div class="col-lg-5 col-md-8 col-sm-10 mx-auto">
+				<div class="card" style="width:auto;">
 					<form action="register" method="POST" class="form" id="form1">
 						<div class="card-header text-white text-center" style="background-color: #2196f3;">	
 							<i class="fa fa-user-plus fa-2x" aria-hidden="true"></i><br/>	
@@ -51,7 +51,7 @@
 							</div>
 							<div class="form-group">
 								<div class="form-check">
-									<input class="form-check-input"  name="check" type="checkbox" value="" id="invalidCheck3">
+									<input class="form-check-input"  name="check" type="checkbox" value="" id="invalidCheck3" required>
 									<label class="form-check-label" for="invalidCheck3">
 										Agree to terms and conditions
 									</label>
