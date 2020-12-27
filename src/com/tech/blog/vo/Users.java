@@ -1,7 +1,7 @@
 package com.tech.blog.vo;
 
 public class Users {
-	private String user_id;
+	private int user_id;
 	private String user_name;
 	private String user_pass;
 	private String user_email;
@@ -13,7 +13,7 @@ public class Users {
 		super();
 	}
 
-	public Users(String user_id, String user_name, String user_pass, String user_email, String user_gender,
+	public Users(int user_id, String user_name, String user_pass, String user_email, String user_gender,
 			String user_about, String created) {
 		super();
 		this.user_id = user_id;
@@ -41,11 +41,11 @@ public class Users {
 				+ "]";
 	}
 
-	public String getUser_id() {
+	public int getUser_id() {
 		return user_id;
 	}
 	
-	public void setUser_id(String user_id) {
+	public void setUser_id(int user_id) {
 		this.user_id = user_id;
 	}
 	

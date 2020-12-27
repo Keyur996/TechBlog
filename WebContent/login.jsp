@@ -23,7 +23,7 @@
 			      	</div>
                </div>
                <div class="card-body">
-                  <form action="#" method="post" class="form" id="form2">
+                  <form action="login" method="POST" class="form" id="form2">
                      <div class="input-group form-group">
                         <div class="input-group-prepend">
                            <span class="input-group-text"><i class="fa fa-user-circle" aria-hidden="true"></i></span>
